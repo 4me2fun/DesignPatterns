@@ -2,17 +2,17 @@ class CompositeEquipment : public Equipment {
 public:
   virtual ~CompositeEquipment();
 
-  virtual Watt power();
-  virtual Currency netPrice();
-  virtual Currency discountPrice();
+  virtual Watt Power();
+  virtual Currency NetPrice();
+  virtual Currency DiscountPrice();
 
-  virtual void add(Equipment*);
-  virtual void remove(Equipment*);
-  virtual Iterator<Equipment*>* createIterator();
+  virtual void Add( Equipment* );
+  virtual void Remove( Equipment* );
+  virtual Iterator< Equipment* >* CreateIterator();
 
 protected:
-  CompositeEquipment(const char*);
+  CompositeEquipment( const char* );
 
 private:
-  List<Equipment*> m_equipment;
+  List< Equipment* > m_equipment;
 };

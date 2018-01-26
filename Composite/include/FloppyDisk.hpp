@@ -1,9 +1,9 @@
 class FloppyDisk : public Equipment {
 public:
-  FloppyDisk(const char*);
+  FloppyDisk( const char* );
   virtual ~FloppyDisk();
 
-  virtual Watt power();
-  virtual Currency netPrice();
-  virtual Currency discountPrice();
+  virtual Watt Power();
+  virtual Currency NetPrice();
+  virtual Currency DiscountPrice();
 };
