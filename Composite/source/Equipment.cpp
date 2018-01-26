@@ -4,16 +4,16 @@ Equipment::~Equipment() {
 
 }
 
-Watt Equipment::Power() {
-
+unsigned int Equipment::Power() {
+ return 70;
 }
 
-Currency Equipment::NetPrice() {
-
+unsigned int Equipment::NetPrice() {
+  return 7;
 }
 
-Currency Equipment::DiscountPrice() {
-
+unsigned int Equipment::DiscountPrice() {
+  return 3;
 }
 
 void Equipment::Add( Equipment *equipment ) {
@@ -29,6 +29,6 @@ Iterator< Equipment* >* Equipment::CreateIterator() {
 }
 
 Equipment::Equipment( const char *name ) {
-
+  m_name = name;
 }
 

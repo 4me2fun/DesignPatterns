@@ -4,16 +4,16 @@ CompositeEquipment::~CompositeEquipment() {
 
 }
 
-Watt CompositeEquipment::Power() {
-
+unsigned int CompositeEquipment::Power() {
+  return 56;
 }
 
-Currency CompositeEquipment::NetPrice() {
-
+unsigned int CompositeEquipment::NetPrice() {
+  return 13;
 }
 
-Currency CompositeEquipment::DiscountPrice() {
-
+unsigned int CompositeEquipment::DiscountPrice() {
+  return 56;
 }
 
 void CompositeEquipment::Add( Equipment *equipment ) {
@@ -29,6 +29,6 @@ Iterator< Equipment* >* CompositeEquipment::CreateIterator() {
 }
 
 CompositeEquipment::CompositeEquipment( const char *name ) {
-
+  m_name = name;
 }
 

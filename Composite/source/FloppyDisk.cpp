@@ -1,22 +1,22 @@
 #include <FloppyDisk.hpp>
 
 FloppyDisk::FloppyDisk( const char *name ) {
-
+  m_name = name;
 }
 
 FloppyDisk::~FloppyDisk() {
 
 }
 
-Watt FloppyDisk::Power() {
-
+unsigned int FloppyDisk::Power() {
+  return 45;
 }
 
-Currency FloppyDisk::NetPrice() {
-
+unsigned int FloppyDisk::NetPrice() {
+  return 23;
 }
 
-Currency FloppyDisk::DiscountPrice() {
-
+unsigned int FloppyDisk::DiscountPrice() {
+  return 20;
 }
 

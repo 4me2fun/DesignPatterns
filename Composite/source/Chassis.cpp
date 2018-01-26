@@ -1,23 +1,23 @@
 #include <Chassis.hpp>
 
 Chassis::Chassis( const char *name ) {
-
+  m_name = name;
 }
 
 Chassis::~Chassis() {
 
 }
 
-Watt Chassis::Power() {
-
+unsigned int Chassis::Power() {
+  return 3;
 }
 
-Currency Chassis::NetPrice() {
-
+unsigned int Chassis::NetPrice() {
+  return 8;
 }
 
-Currency Chassis::DiscountPrice() {
-
+unsigned int Chassis::DiscountPrice() {
+  return 6;
 }
 
 
