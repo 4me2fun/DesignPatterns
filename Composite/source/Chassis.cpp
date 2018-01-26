@@ -1,9 +1,23 @@
-class Chassis : public CompositeEquipment {
-public:
-  Chassis( const char* );
-  virtual ~Chassis();
+#include <Chassis.hpp>
 
-  virtual Watt Power();
-  virtual Currency NetPrice();
-  virtual Currency DiscountPrice();
-};
+Chassis::Chassis( const char *name ) {
+
+}
+
+Chassis::~Chassis() {
+
+}
+
+Watt Chassis::Power() {
+
+}
+
+Currency Chassis::NetPrice() {
+
+}
+
+Currency Chassis::DiscountPrice() {
+
+}
+
+

@@ -1,9 +1,22 @@
-class FloppyDisk : public Equipment {
-public:
-  FloppyDisk( const char* );
-  virtual ~FloppyDisk();
+#include <FloppyDisk.hpp>
 
-  virtual Watt Power();
-  virtual Currency NetPrice();
-  virtual Currency DiscountPrice();
-};
+FloppyDisk::FloppyDisk( const char *name ) {
+
+}
+
+FloppyDisk::~FloppyDisk() {
+
+}
+
+Watt FloppyDisk::Power() {
+
+}
+
+Currency FloppyDisk::NetPrice() {
+
+}
+
+Currency FloppyDisk::DiscountPrice() {
+
+}
+

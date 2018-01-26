@@ -1,20 +1,34 @@
-class Equipment {
-public:
-  virtual ~Equipment();
+#include <Equipment.hpp>
 
-  const char* Name() { return m_name; }
+Equipment::~Equipment() {
 
-  virtual Watt Power();
-  virtual Currency NetPrice();
-  virtual Currency DiscountPrice();
+}
 
-  virtual void Add( Equipment* );
-  virtual void Remove( Equipment* );
-  virtual Iterator< Equipment* >* CreateIterator();
+Watt Equipment::Power() {
 
-protected:
-  Equipment( const char* );
+}
 
-private:
-  const char *m_name;
-};
+Currency Equipment::NetPrice() {
+
+}
+
+Currency Equipment::DiscountPrice() {
+
+}
+
+void Equipment::Add( Equipment *equipment ) {
+
+}
+
+void Equipment::Remove( Equipment *equipment ) {
+
+}
+
+Iterator< Equipment* >* Equipment::CreateIterator() {
+
+}
+
+Equipment::Equipment( const char *name ) {
+
+}
+

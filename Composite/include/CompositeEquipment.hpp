@@ -6,12 +6,12 @@ public:
   virtual Currency NetPrice();
   virtual Currency DiscountPrice();
 
-  virtual void Add( Equipment* );
-  virtual void Remove( Equipment* );
+  virtual void Add( Equipment *equipment );
+  virtual void Remove( Equipment *equipment );
   virtual Iterator< Equipment* >* CreateIterator();
 
 protected:
-  CompositeEquipment( const char* );
+  CompositeEquipment( const char *name );
 
 private:
   List< Equipment* > m_equipment;

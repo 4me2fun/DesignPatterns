@@ -8,12 +8,12 @@ public:
   virtual Currency NetPrice();
   virtual Currency DiscountPrice();
 
-  virtual void Add( Equipment* );
-  virtual void Remove( Equipment* );
+  virtual void Add( Equipment *equipment );
+  virtual void Remove( Equipment *equipment );
   virtual Iterator< Equipment* >* CreateIterator();
 
 protected:
-  Equipment( const char* );
+  Equipment( const char *name );
 
 private:
   const char *m_name;

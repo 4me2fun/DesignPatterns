@@ -1,6 +1,6 @@
 class Chassis : public CompositeEquipment {
 public:
-  Chassis( const char* );
+  Chassis( const char *name );
   virtual ~Chassis();
 
   virtual Watt Power();

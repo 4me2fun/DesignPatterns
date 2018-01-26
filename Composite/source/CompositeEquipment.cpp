@@ -1,18 +1,34 @@
-class CompositeEquipment : public Equipment {
-public:
-  virtual ~CompositeEquipment();
+#include <CompositeEquipment.hpp>
 
-  virtual Watt Power();
-  virtual Currency NetPrice();
-  virtual Currency DiscountPrice();
+CompositeEquipment::~CompositeEquipment() {
 
-  virtual void Add( Equipment* );
-  virtual void Remove( Equipment* );
-  virtual Iterator< Equipment* >* CreateIterator();
+}
 
-protected:
-  CompositeEquipment( const char* );
+Watt CompositeEquipment::Power() {
 
-private:
-  List< Equipment* > m_equipment;
-};
+}
+
+Currency CompositeEquipment::NetPrice() {
+
+}
+
+Currency CompositeEquipment::DiscountPrice() {
+
+}
+
+void CompositeEquipment::Add( Equipment *equipment ) {
+
+}
+
+void CompositeEquipment::Remove( Equipment *equipment ) {
+
+}
+
+Iterator< Equipment* >* CompositeEquipment::CreateIterator() {
+
+}
+
+CompositeEquipment::CompositeEquipment( const char *name ) {
+
+}
+
