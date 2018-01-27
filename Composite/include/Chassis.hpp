@@ -1,3 +1,7 @@
+#include "CompositeEquipment.hpp"
+
+namespace chassis {
+
 class Chassis : public CompositeEquipment {
 public:
   Chassis( const char *name );
@@ -7,3 +11,5 @@ public:
   virtual unsigned int NetPrice();
   virtual unsigned int DiscountPrice();
 };
+
+} // namespace chassis

@@ -1,3 +1,5 @@
+namespace equipment {
+
 class Equipment {
 public:
   virtual ~Equipment();
@@ -10,11 +12,12 @@ public:
 
   virtual void Add( Equipment *equipment );
   virtual void Remove( Equipment *equipment );
-  virtual Iterator< Equipment* >* CreateIterator();
 
 protected:
   Equipment( const char *name );
 
-private:
+protected:
   const char *m_name;
 };
+
+} // namespace equipment

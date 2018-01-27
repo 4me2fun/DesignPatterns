@@ -1,3 +1,9 @@
+#include <list>
+
+#include "Equipment.hpp"
+
+namespace compositeequipment {
+
 class CompositeEquipment : public Equipment {
 public:
   virtual ~CompositeEquipment();
@@ -8,11 +14,12 @@ public:
 
   virtual void Add( Equipment *equipment );
   virtual void Remove( Equipment *equipment );
-  virtual Iterator< Equipment* >* CreateIterator();
 
 protected:
   CompositeEquipment( const char *name );
 
-private:
-  List< Equipment* > m_equipment;
+protected:
+  std::list< Equipment* > m_equipment;
 };
+
+} // namespace compositeequipment

@@ -1,7 +1,17 @@
-#include <CompositeEquipment.hpp>
+#include <iostream>
+
+#include "CompositeEquipment.hpp"
+
+using namespace compositeequipment;
+
+CompositeEquipment::CompositeEquipment( const char *name ) :
+  Equipment( name ) {
+
+  std::cout << __FUNCTION__ << "()" << std::endl;
+}
 
 CompositeEquipment::~CompositeEquipment() {
-
+  std::cout << __FUNCTION__ << "()" << std::endl;
 }
 
 unsigned int CompositeEquipment::Power() {
@@ -22,13 +32,5 @@ void CompositeEquipment::Add( Equipment *equipment ) {
 
 void CompositeEquipment::Remove( Equipment *equipment ) {
 
-}
-
-Iterator< Equipment* >* CompositeEquipment::CreateIterator() {
-
-}
-
-CompositeEquipment::CompositeEquipment( const char *name ) {
-  m_name = name;
 }
 

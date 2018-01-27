@@ -1,3 +1,7 @@
+#include "Equipment.hpp"
+
+namespace floppydisk {
+
 class FloppyDisk : public Equipment {
 public:
   FloppyDisk( const char *name );
@@ -7,3 +11,5 @@ public:
   virtual unsigned int NetPrice();
   virtual unsigned int DiscountPrice();
 };
+
+} // namespace floppydisk

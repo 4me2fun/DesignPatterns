@@ -1,11 +1,17 @@
-#include <Chassis.hpp>
+#include <iostream>
 
-Chassis::Chassis( const char *name ) {
-  m_name = name;
+#include "Chassis.hpp"
+
+using namespace chassis;
+
+Chassis::Chassis( const char *name ) :
+  CompositeEquipment( name ) {
+
+  std::cout << __FUNCTION__ << "()" << std::endl;
 }
 
 Chassis::~Chassis() {
-
+  std::cout << __FUNCTION__ << "()" << std::endl;
 }
 
 unsigned int Chassis::Power() {

@@ -1,11 +1,17 @@
-#include <FloppyDisk.hpp>
+#include <iostream>
 
-FloppyDisk::FloppyDisk( const char *name ) {
-  m_name = name;
+#include "FloppyDisk.hpp"
+
+using namespace floppydisk;
+
+FloppyDisk::FloppyDisk( const char *name ) :
+  Equipment( name ) {
+
+  std::cout << __FUNCTION__ << "()" << std::endl;
 }
 
 FloppyDisk::~FloppyDisk() {
-
+  std::cout << __FUNCTION__ << "()" << std::endl;
 }
 
 unsigned int FloppyDisk::Power() {
