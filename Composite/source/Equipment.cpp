@@ -13,23 +13,23 @@ Equipment::~Equipment() {
   std::cout << __FUNCTION__ << "()" << std::endl;
 }
 
-unsigned int Equipment::Power() {
+unsigned int Equipment::power() {
  return 70;
 }
 
-unsigned int Equipment::NetPrice() {
+unsigned int Equipment::netPrice() {
   return 7;
 }
 
-unsigned int Equipment::DiscountPrice() {
+unsigned int Equipment::discountPrice() {
   return 3;
 }
 
-void Equipment::Add( Equipment *equipment ) {
+void Equipment::add( Equipment *equipment ) {
 
 }
 
-void Equipment::Remove( Equipment *equipment ) {
+void Equipment::remove( Equipment *equipment ) {
 
 }
 

@@ -5,7 +5,7 @@
 using namespace chassis;
 
 Chassis::Chassis( const char *name ) :
-  CompositeEquipment( name ) {
+  compositeequipment::CompositeEquipment( name ) {
 
   std::cout << __FUNCTION__ << "()" << std::endl;
 }
@@ -14,15 +14,15 @@ Chassis::~Chassis() {
   std::cout << __FUNCTION__ << "()" << std::endl;
 }
 
-unsigned int Chassis::Power() {
+unsigned int Chassis::power() {
   return 3;
 }
 
-unsigned int Chassis::NetPrice() {
+unsigned int Chassis::netPrice() {
   return 8;
 }
 
-unsigned int Chassis::DiscountPrice() {
+unsigned int Chassis::discountPrice() {
   return 6;
 }
 

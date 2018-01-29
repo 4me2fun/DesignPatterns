@@ -4,14 +4,14 @@ class Equipment {
 public:
   virtual ~Equipment();
 
-  const char* Name() { return m_name; }
+  const char* name() { return m_name; }
 
-  virtual unsigned int Power();
-  virtual unsigned int NetPrice();
-  virtual unsigned int DiscountPrice();
+  virtual unsigned int power();
+  virtual unsigned int netPrice();
+  virtual unsigned int discountPrice();
 
-  virtual void Add( Equipment *equipment );
-  virtual void Remove( Equipment *equipment );
+  virtual void add( Equipment *equipment );
+  virtual void remove( Equipment *equipment );
 
 protected:
   Equipment( const char *name );

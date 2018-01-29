@@ -4,22 +4,22 @@
 
 namespace compositeequipment {
 
-class CompositeEquipment : public Equipment {
+class CompositeEquipment : public equipment::Equipment {
 public:
   virtual ~CompositeEquipment();
 
-  virtual unsigned int Power();
-  virtual unsigned int NetPrice();
-  virtual unsigned int DiscountPrice();
+  virtual unsigned int power();
+  virtual unsigned int netPrice();
+  virtual unsigned int discountPrice();
 
-  virtual void Add( Equipment *equipment );
-  virtual void Remove( Equipment *equipment );
+  virtual void add( equipment::Equipment *equipment );
+  virtual void remove( equipment::Equipment *equipment );
 
 protected:
   CompositeEquipment( const char *name );
 
 protected:
-  std::list< Equipment* > m_equipment;
+  std::list< equipment::Equipment* > m_equipment;
 };
 
 } // namespace compositeequipment
