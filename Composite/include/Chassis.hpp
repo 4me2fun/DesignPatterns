@@ -1,3 +1,6 @@
+#ifndef __CHASSIS__
+#define __CHASSIS__
+
 #include "CompositeEquipment.hpp"
 
 namespace chassis {
@@ -13,3 +16,5 @@ public:
 };
 
 } // namespace chassis
+
+#endif // __CHASSIS__

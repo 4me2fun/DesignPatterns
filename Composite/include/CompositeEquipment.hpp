@@ -1,3 +1,6 @@
+#ifndef __COMPOSITE_EQUIPMENT__
+#define __COMPOSITE_EQUIPMENT__
+
 #include <list>
 
 #include "Equipment.hpp"
@@ -23,3 +26,5 @@ protected:
 };
 
 } // namespace compositeequipment
+
+#endif // __COMPOSITE_EQUIPMENT__

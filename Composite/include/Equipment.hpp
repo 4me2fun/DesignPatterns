@@ -1,3 +1,6 @@
+#ifndef __EQUIPMENT__
+#define __EQUIPMENT__
+
 namespace equipment {
 
 class Equipment {
@@ -21,3 +24,5 @@ protected:
 };
 
 } // namespace equipment
+
+#endif // __EQUIPMENT__

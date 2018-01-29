@@ -1,3 +1,6 @@
+#ifndef __FLOPPY_DISK__
+#define __FLOPPY_DISK__
+
 #include "Equipment.hpp"
 
 namespace floppydisk {
@@ -13,3 +16,5 @@ public:
 };
 
 } // namespace floppydisk
+
+#endif // __FLOPPY_DISK__

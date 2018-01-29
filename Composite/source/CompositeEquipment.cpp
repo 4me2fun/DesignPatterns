@@ -12,6 +12,13 @@ CompositeEquipment::CompositeEquipment( const char *name ) :
 
 CompositeEquipment::~CompositeEquipment() {
   std::cout << __FUNCTION__ << "()" << std::endl;
+  // TODO: remove all members using remove()
+
+  while ( !m_equipment.empty() )
+  {
+    m_equipment.pop_back();
+  }
+  std::cout << "CompositeEquipment::" << __FUNCTION__ << "(), size=" << m_equipment.size() << std::endl;
 }
 
 unsigned int CompositeEquipment::power() {
@@ -27,10 +34,12 @@ unsigned int CompositeEquipment::discountPrice() {
 }
 
 void CompositeEquipment::add( equipment::Equipment *equipment ) {
-
+  m_equipment.push_back( equipment );
+  std::cout << "CompositeEquipment::" << __FUNCTION__ << "(), size=" << m_equipment.size() << std::endl;
 }
 
 void CompositeEquipment::remove( equipment::Equipment *equipment ) {
-
+  m_equipment.remove(equipment);
+  std::cout << "CompositeEquipment::" << __FUNCTION__ << "(), size=" << m_equipment.size() << std::endl;
 }
 
