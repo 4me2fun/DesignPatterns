@@ -19,7 +19,7 @@ unsigned int FloppyDisk::power() {
 }
 
 unsigned int FloppyDisk::netPrice() {
-  return 23;
+  return 35;
 }
 
 unsigned int FloppyDisk::discountPrice() {

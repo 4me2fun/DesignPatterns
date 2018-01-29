@@ -14,11 +14,11 @@ Equipment::~Equipment() {
 }
 
 unsigned int Equipment::power() {
- return 70;
+ return 9;
 }
 
 unsigned int Equipment::netPrice() {
-  return 7;
+  return 10;
 }
 
 unsigned int Equipment::discountPrice() {

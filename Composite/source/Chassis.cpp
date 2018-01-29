@@ -15,15 +15,15 @@ Chassis::~Chassis() {
 }
 
 unsigned int Chassis::power() {
-  return 3;
+  return CompositeEquipment::power();
 }
 
 unsigned int Chassis::netPrice() {
-  return 8;
+  return CompositeEquipment::netPrice();
 }
 
 unsigned int Chassis::discountPrice() {
-  return 6;
+  return CompositeEquipment::discountPrice();
 }
 
 
