@@ -13,7 +13,7 @@ CompositeEquipment::CompositeEquipment( const char *name ) :
 CompositeEquipment::~CompositeEquipment() {
   std::cout << __FUNCTION__ << "()" << std::endl;
 
-  for( Equipment *ptr : m_equipment )
+  for ( Equipment *ptr : m_equipment )
   {
     delete ptr;
   }
@@ -29,7 +29,7 @@ CompositeEquipment::~CompositeEquipment() {
 unsigned int CompositeEquipment::power() {
   unsigned int sumOfAllPower = 0;
 
-  for( Equipment *ptr : m_equipment )
+  for ( Equipment *ptr : m_equipment )
   {
     sumOfAllPower += ptr->power();
   }
@@ -40,7 +40,7 @@ unsigned int CompositeEquipment::power() {
 unsigned int CompositeEquipment::netPrice() {
   unsigned int sumOfAllNetPrice = 0;
 
-  for( Equipment *ptr : m_equipment )
+  for ( Equipment *ptr : m_equipment )
   {
     sumOfAllNetPrice += ptr->netPrice();
     std::cout << "CompositeEquipment::" << __FUNCTION__ << "(), netPrice=" << ptr->netPrice() << std::endl;
@@ -52,7 +52,7 @@ unsigned int CompositeEquipment::netPrice() {
 unsigned int CompositeEquipment::discountPrice() {
   unsigned int sumOfAllDiscountPrice = 0;
 
-  for( Equipment *ptr : m_equipment )
+  for ( Equipment *ptr : m_equipment )
   {
     sumOfAllDiscountPrice += ptr->discountPrice();
   }
