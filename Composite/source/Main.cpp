@@ -4,7 +4,7 @@
 #include "FloppyDisk.hpp"
 
 int main () {
-  std::cout << "started 'Composite' Design Pattern main program" << endl;
+  std::cout << "started 'Composite' Design Pattern main program" << std::endl;
 
 //  equipment::Equipment *equipment = new floppydisk::FloppyDisk( "Floppy disk 3.5 inch" );
 //  delete equipment;
