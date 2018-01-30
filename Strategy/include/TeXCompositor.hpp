@@ -5,12 +5,12 @@
 
 namespace texcompositor {
 
-class TeXCompositor : public compositor::Compositor {
+class TeXCompositor final : public compositor::Compositor {
 public:
   explicit TeXCompositor();
   virtual ~TeXCompositor();
 
-  virtual int compose ( int natural[], int stretch[], int shrink[], int componentCount, int lineWidth, int breaks[] );
+  int compose ( int natural[], int stretch[], int shrink[], int componentCount, int lineWidth, int breaks[] ) override;
 };
 
 } // namespace texcompositor

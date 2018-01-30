@@ -5,12 +5,12 @@
 
 namespace simplecompositor {
 
-class SimpleCompositor : public compositor::Compositor {
+class SimpleCompositor final : public compositor::Compositor {
 public:
   explicit SimpleCompositor();
   virtual ~SimpleCompositor();
 
-  virtual int compose ( int natural[], int stretch[], int shrink[], int componentCount, int lineWidth, int breaks[] );
+  int compose ( int natural[], int stretch[], int shrink[], int componentCount, int lineWidth, int breaks[] ) override;
 };
 
 } // namespace simplecompositor

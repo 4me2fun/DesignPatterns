@@ -5,12 +5,12 @@
 
 namespace arraycompositor {
 
-class ArrayCompositor : public compositor::Compositor {
+class ArrayCompositor final : public compositor::Compositor {
 public:
   explicit ArrayCompositor( int interval );
   virtual ~ArrayCompositor();
 
-  virtual int compose ( int natural[], int stretch[], int shrink[], int componentCount, int lineWidth, int breaks[] );
+  int compose ( int natural[], int stretch[], int shrink[], int componentCount, int lineWidth, int breaks[] ) override;
 };
 
 } // namespace arraycompositor
