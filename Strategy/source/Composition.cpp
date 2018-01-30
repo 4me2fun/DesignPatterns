@@ -39,5 +39,6 @@ void Composition::repair() {
   std::cout << CLASS_NAME << __FUNCTION__ << "()" << std::endl;
 
   int breakCount = m_compositor->compose( natural, strethability, shrinkability, componentCount, m_lineWidth, breaks );
+  std::cout << CLASS_NAME << __FUNCTION__ << "(), breakCount=" << breakCount << std::endl;
 }
 
