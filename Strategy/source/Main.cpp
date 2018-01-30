@@ -7,7 +7,7 @@
 
 
 int main() {
-  std::cout << __FUNCTION__ << "() start program" << std::endl;
+  std::cout << "started 'Strategy' Design Pattern main program" << endl;
 
   composition::Composition *quick = new composition::Composition( new simplecompositor::SimpleCompositor() );
   quick->repair();
