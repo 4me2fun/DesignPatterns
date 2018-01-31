@@ -15,5 +15,8 @@ int main() {
   glyphContext.insert( 6 );
   glyphContext.setFont( timesItalic12, 6 );
 
+  delete times12;
+  delete timesItalic12;
+
   return 0;
 }
